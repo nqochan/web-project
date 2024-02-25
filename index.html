@@ -18,7 +18,7 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20 30px;
   text-decoration: none;
   font-size: 40px;
 
@@ -54,12 +54,18 @@
 </head>
 
 <body>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="navbar">
-    <a class="active" > </a>
-    <a  href="#home" style="width:33.3%!important">HOME</a>
-    <a href=#about"style="width:33.3%!important">ABOUT</a>
-    <a href="#contact"style="width:33.3%!important">CONTACT</a>
+
+
+<div class="navbar" id="topnav">
+    <a href="#home" class ="active">HOME</a>
+    <a href=#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+    <a href="javascript:void(0);"class="icon" onclick="myFunction()">
+     <i class ="fa fa-bars"></i>
+    </a>
 </div>
 <div style="padding-left:16px">
     <h1>Hello World</h1>
