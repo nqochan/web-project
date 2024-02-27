@@ -19,7 +19,7 @@
 }
 .navbar a.active{
     background-color: lightskyblue;
-    color: brown;
+    color: rgb(125, 77, 77);
 }
 .navbar .icon{
 display: none;
