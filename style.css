@@ -5,19 +5,24 @@
     
 .navbar a{   
     float: center;
-    height: 100px;
+    display: block;
+    color: gray;
     text-align: center;
     text-decoration: none;
+    padding: 20px 30px;
     font-size: 40px;
 }
 
 .navbar a:hover{
-    background-color: black;
-    color: gray;
+    background-color: lightgray;
+    color: darkgrey;
 }
 .navbar a.active{
-    background-color: black;
-    color: gray;
+    background-color: lightskyblue;
+    color: brown;
+}
+.navbar .icon{
+display: none;
 }
 
 p{
