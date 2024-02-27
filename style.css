@@ -1,5 +1,25 @@
 .navbar{
+    overflow: hidden;
+    background-color: gray;
     width: 400px;
     float: center;
     height: 100px
+}
+
+.navbar a:hover{
+    background-color: lightskyblue;
+    color: gray;
+}
+.navbar a.active{
+    background-color: black;
+    color: gray;
+}
+
+p{
+    font-size: 150%;
+    color: white;
+}
+body,h1, h2, h3, h4, h5, h6{
+    background-color:yellow;
+    font-family: Arial, Helvetica, sans-serif;
 }
