@@ -4,16 +4,15 @@
 }
     
 .navbar a{   
-    width: 400px;
     float: center;
     height: 100px;
     text-align: center;
     text-decoration: none;
-    font-size: 20;
+    font-size: 40px;
 }
 
 .navbar a:hover{
-    background-color: lightskyblue;
+    background-color: black;
     color: gray;
 }
 .navbar a.active{
