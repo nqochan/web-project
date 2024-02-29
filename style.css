@@ -1,11 +1,21 @@
 navbar{
     width: 400px;
-    float:none;
+    float: left;
     height: 70px;
-    text-align:center;
 
+}
 
+ul{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
+ul li{
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 50px;
+    font-size: 20px;
 
 }
