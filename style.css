@@ -3,38 +3,6 @@ body{
     margin-top: 25px;
 }
 
-header{
-    display: flex;
-    position: flex;
-    top: 10px;
-    left: 10px;
-    right: 0;
-    height: 50px;
-    line-height: 30px;
-    background-color: black;
-
-}
-header * {
-    display: inline;
-    height: 50px;
-}
-
-header ul {
-    padding: 0;
-}
-
-header li {
-    margin-left: 20px;
-}
-
-section{
-    display: flex;
-    text-align:center;
-    align-items:center;
-    height: 20px;
-}
-
-
 
 .navbar{
     overflow: hidden;
