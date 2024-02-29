@@ -4,20 +4,19 @@ body{
 }
 
 
+section{
+    display: flex;
+    text-align:center;
+    align-items:center;
+    height: 20px;
+}
+
+
 .navbar{
     overflow: hidden;
     background-color: gray;
 }
     
-.navbar a{   
-    float: center;
-    display: block;
-    color: gray;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px 30px;
-    font-size: 40px;
-}
 
 .navbar a:hover{
     background-color: lightgray;
@@ -26,9 +25,6 @@ body{
 .navbar a.active{
     background-color: lightskyblue;
     color: rgb(125, 77, 77);
-}
-.navbar .icon{
-display: none;
 }
 
 p{
