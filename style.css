@@ -1,4 +1,12 @@
+/* background color */
 .navbar{
+    background-color: black;
+    overflow: hidden;
+   
+
+}
+
+.navbar a{
     width: 400px;
     float: left;
     height: 70px;
@@ -14,8 +22,9 @@ ul{
 
 ul li{
     list-style: none;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 62px;
     font-size: 20px;
+    
 
 }
