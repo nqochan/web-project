@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Web Project</title>
     <style>
         *{
@@ -16,7 +15,7 @@
         }
 
         body{
-            font-family: "montserrat", sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background-color: black;
             color:white;
             background-image: url(flower.webp);
@@ -32,6 +31,7 @@
 
         h1{
             opacity: 0.7;
+            padding-left: 3%;
 
         }
         /*nav bar*/
@@ -72,7 +72,7 @@
 
         }
 
-        
+        /*change color when hover*/
         a:hover{
             background-color: lightgray;
             color: black; 
@@ -86,6 +86,7 @@
         }
       
 
+        /* about text  */
         .info{
             align-items:center;
             text-align:center;
@@ -120,6 +121,7 @@
             margin-left: 5%;
         }
 
+        /*change color button*/
         .changeColor{
             background-color: white;
             color:black;
@@ -133,6 +135,7 @@
            
 
         }
+        /*have buttons next to each other*/
         .button-container{
             display:flex;
         }
@@ -140,10 +143,11 @@
 
 
         .kim{
-            padding-left: 30px;
+            padding-left: 5%;
         }
 
 
+        /*change nav when screen shrinks*/
         @media (max-width: 600px){
             nav ul li a{
                 font-size:15px;
@@ -155,13 +159,13 @@
             nav{
                 height:auto;
                 float:right;
-                width:25%;
+                width:30%;
                 opacity:0.7;
             }
 
             /* shifting paragraphs to right for mini nav */
             .info{
-                padding-left: 150px;
+                padding-left: 100px;
                 padding-top: 10%;
                 
             }
@@ -275,11 +279,13 @@
         <br>
         <br>
 
+
+        <!--Contact Form Blocks -->
         <section id="contact">
             <div>
                 <h1> Contact Me:</h1>
                 <br>
-                <img class="kim" src="me.jpg" alt="photo of me" style="width:200px;height:250px;margin-left:15px;">
+                <img class="kim" src="me.jpg" alt="photo of me" style="width:240px;height:250px;margin-left:15px;">
                 <form name =contactForm action="/action_page.php" >
                     <p> <input class = "contactbars" type="text"
                     placeholder="Name" input id ="name"required name="Name"></p>
