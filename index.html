@@ -3,23 +3,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Web Project</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            text-decoration: none;
+            list-style:none;
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            font-family: "montserrat", sans-serif;
+            background-color: black;
+            color:white;
+            background-image: url(flower.webp);
+            background-size: cover;
+        }
+
+    
+        p{
+            text-align: right;
+
+
+        }
+
+        h1{
+            opacity: 0.7;
+
+        }
+        /*nav bar*/
+        nav{
+            background-color: darkgray;
+            width: 100%;
+            height: 60px;
+            position:fixed;
+           
+            
+        }
+        /*nav bar content blocks*/
+        nav ul{
+            float:left;
+            text-align: center;
+            float:none;
+            left:50%;
+            margin-top:0;
+            margin-bottom: 0;
+        }
+          
+        /*between nav elements*/
+        
+        nav ul li{
+            display: inline-block;
+            margin: 20px;
+            line-height:60px;
+            
+
+        }
+        /*nav text*/
+        nav ul li a {
+            color: lightgray;
+            font-size: 20px;
+            opacity: 0.7;
+            padding-left: 10px;
+            padding-right: 20px;
+
+        }
+
+        
+        a:hover{
+            background-color: lightgray;
+            color: black; 
+
+
+        }
+        a.active{
+            color: white;
+            background: none;
+            opacity: 0.9;
+        }
+      
+
+        .info{
+            align-items:center;
+            text-align:center;
+            display:block;
+            margin:30px;
+        
+        
+        }
+
+        /* contact form and button */
+        input[type=text], select{
+            width:50%;
+            padding: 20px;
+            margin: 15px;
+            display:inline-block;
+            border:1px solid grey;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-right:45%;
+         
+        }
+
+        
+        input[type=submit] {
+            background-color: white;
+            color:black;
+            width:25%;
+            padding: 15px;
+            margin: 20px;
+            display:inline-block;
+            border:none;
+            border-radius: 4px;
+            margin-left: 5%;
+           
+        }
+        .kim{
+            padding-left: 30px;
+        }
+
+
+     
+        
+        
+
+
+
+
+        
+       
+       
+
+
+
+        @media (max-width: 600px){
+            nav ul li a{
+                font-size:15px;
+                margin-left: 20px;
+                margin:10px;
+                
+
+            }
+            nav{
+                height:auto;
+                float:right;
+                width:20%;
+                opacity:0.7;
+            }
+
+            /* shifting paragraphs to right for mini nav */
+            .info{
+                padding-left: 150px;
+                padding-top: 10%;
+                
+            }
+        
+            ul{
+                width:10%;
+                top: 55px;
+                float:none;
+                
+            }
+            nav ul li{
+                display: block;
+                margin:10px;
+                line-height:30px;
+                
+            }
+        }
+
+
+        /* changing contact part to fit mini screens */
+        @media (max-width:600px){
+            input[type=text], select{
+                margin-left:45%;
+
+            }
+            input[type=submit] {
+                margin-left:70%;
+
+            }
+            h1{
+                margin-left:55%;
+            }
+
+            .kim{
+               display:none;
+            
+        }
+
+
+        }
+        
+        
+
+       
+
+
+
+
+
+
+    </style>
 
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <ul>
-                <li> <a href="#home" class="active">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li> <a href="#contact">CONTACT</a></li>
+    <nav>
 
-            </ul>
+        <ul>
+            <li> <a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li> <a href="#contact">CONTACT</a></li>
+            
 
-        </div>
+        </ul>
+
+    </nav>
+   
+        <br>
+
+        <section id="home">
+         
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+               
+               
+
+        <section id="about">
+            <div class="info">
+                <h2>My Background</h2>
+                <br>
+            <p>My name is Kim and I'm 21 years old. I started atttending Kennesaw State after graduating high 
+                school in Spring 2021. I started out as a Computer Science major and now I'm currently majoring 
+                in cybersecurity. I have some programming knowledge with Java and have learned a bit of HTML in 
+                high school. I have interests in AI, web development, and hacking. </p> 
+                <br>
 
 
-    </div>
+
+
+            <h2>My Experiences</h2>
+            <br>
+            <p> I don't have many experiences at Kennesaw since I've been all of my classes online. My experiences 
+                regarding my classes involve family members drilling on random objects when I'm taking quizzes for 
+                my classes. At the beginning of the pandemic, I've also used a treadmill as a table for my laptop 
+                since there weren't any clear tables around. During the pandemic, my family did a bunch of home
+                renovations so at one point, I had to use a bag of rice as a chair during my chemistry class meeting.
+            </p>
+                <br>
+
+
+
+
+            <h2>My Goals</h2>
+            <br>
+            <p>My main goal is to graduate from KSU with a cybersecurity degree and get a job at a company. Ideally,
+                I will be graduating in next spring in 2025. My minor goals include getting most A's in all of my 
+                classes and ensuring my GPA around a 3.7 to 3.8. I would also like to attend some events at KSU to
+                network and land another internship.
+            </p>
+                <br>
+
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+
+        <section id="contact">
+            <div>
+                <h1> Contact Me:</h1>
+                <br>
+                <img class="kim" src="me.jpg" alt="photo of me" style="width:200px;height:250px;margin-left:15px;">
+                <form action="/action_page.php" target="_blank">
+                    <p> <input class = "contactbars" type="text"
+                    placeholder="Name" required name="Name"></p>
+
+                    <p><input class ="contactbars" type="text"
+                     placeholder="Email" required name="Email"></p>
+
+                     <p><input class ="contactbars" type="text"
+                     placeholder="Subject" required name="Subject"></p>
+
+                     <p><input class ="contactbars" type="text"
+                    placeholder="Message" required name="Message"></p>
+
+                    
+                    <input type="submit" value="Send">
+                    <br>
+                    
+                    
+                    
+
+                </form>
+
+            </div>
+        </section>
+
+        <script>
+
+
+
+
+
+
+
+
+        </script>
+
+        
+       
+
+  
+   
+
 
 </body>
 </html>
