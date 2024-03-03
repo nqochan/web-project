@@ -108,21 +108,6 @@
          
         }
 
-        
-        /*input[type=submit] {
-            background-color: white;
-            color:black;
-            width:25%;
-            padding: 15px;
-            margin: 20px;
-            display:inline-block;
-            border:none;
-            border-radius: 4px;
-            margin-left: 5%;
-           
-        }
-        */
-
         .submit{
             background-color: white;
             color:black;
@@ -134,22 +119,29 @@
             border-radius: 4px;
             margin-left: 5%;
         }
+
+        .changeColor{
+            background-color: white;
+            color:black;
+            width:23%;
+            padding: 15px;
+            margin: 20px;
+            display:inline-block;
+            border:none;
+            border-radius: 4px;
+            margin-left: 0%;
+           
+
+        }
+        .button-container{
+            display:flex;
+        }
+        
+
+
         .kim{
             padding-left: 30px;
         }
-
-
-     
-        
-        
-
-
-
-
-        
-       
-       
-
 
 
         @media (max-width: 600px){
@@ -203,21 +195,13 @@
                 margin-left:55%;
             }
 
-            .kim{
+            .kim, .changeColor{
                display:none;
             
         }
 
 
         }
-        
-        
-
-       
-
-
-
-
 
 
     </style>
@@ -308,11 +292,13 @@
 
                      <p><input class ="contactbars" type="text"
                     placeholder="Message" input id ="message" required name="Message"></p>
+                    <div class="button-container"> 
                     <button class="submit" onclick="myFunction()">Send</button>
 
                     
                     <br>
-                    
+                    <button class="changeColor" onclick = "changeFontColor()" >Double Click</button>
+                    </div>
 
                     
                     
@@ -320,26 +306,23 @@
 
                 </form>
 
-            </div>
+        
         </section>
 
+        
         <script>
+            function changeFontColor(){
+                let color = document.body.style.color;
+                if(color=="white"){
+                    document.body.style.color = 'lightskyblue';
+                }
+                else{
+                    document.body.style.color = 'white';
+                }
+            }
+
             
-            
-
-             
-        
-
-
-
-
         </script>
-
-        
-       
-
-  
-   
 
 
 </body>
