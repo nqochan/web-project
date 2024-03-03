@@ -298,21 +298,22 @@
                 <img class="kim" src="me.jpg" alt="photo of me" style="width:200px;height:250px;margin-left:15px;">
                 <form name =contactForm action="/action_page.php" target="_blank" onsubmit="return validateForm()" method="post">
                     <p> <input class = "contactbars" type="text"
-                    placeholder="Name" required name="Name"></p>
+                    placeholder="Name" input id ="name"required name="Name"></p>
 
                     <p><input class ="contactbars" type="text"
-                     placeholder="Email" required name="Email"></p>
+                     placeholder="Email" input id ="email" required name="Email"></p>
 
                      <p><input class ="contactbars" type="text"
-                     placeholder="Subject" required name="Subject"></p>
+                     placeholder="Subject" input id ="subject" required name="Subject"></p>
 
                      <p><input class ="contactbars" type="text"
-                    placeholder="Message" required name="Message"></p>
-                    <button class="submit">Send</button>
+                    placeholder="Message" input id ="message" required name="Message"></p>
+                    <button class="submit" onclick="myFunction()">Send</button>
 
                     
-                   <!-- <input type="submit" value="Send"> -->
                     <br>
+                    
+
                     
                     
                     
@@ -323,14 +324,10 @@
         </section>
 
         <script>
-            function validateForm(){
-                let x =documents.forms[contactForm]
+            function myFunction(){
+                alert("Form submitted!");
             }
-
-
-
-
-
+        
 
 
 
