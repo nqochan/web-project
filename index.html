@@ -109,7 +109,7 @@
         }
 
         
-        input[type=submit] {
+        /*input[type=submit] {
             background-color: white;
             color:black;
             width:25%;
@@ -120,6 +120,19 @@
             border-radius: 4px;
             margin-left: 5%;
            
+        }
+        */
+
+        .submit{
+            background-color: white;
+            color:black;
+            width:25%;
+            padding: 15px;
+            margin: 20px;
+            display:inline-block;
+            border:none;
+            border-radius: 4px;
+            margin-left: 5%;
         }
         .kim{
             padding-left: 30px;
@@ -283,7 +296,7 @@
                 <h1> Contact Me:</h1>
                 <br>
                 <img class="kim" src="me.jpg" alt="photo of me" style="width:200px;height:250px;margin-left:15px;">
-                <form action="/action_page.php" target="_blank">
+                <form name =contactForm action="/action_page.php" target="_blank" onsubmit="return validateForm()" method="post">
                     <p> <input class = "contactbars" type="text"
                     placeholder="Name" required name="Name"></p>
 
@@ -295,9 +308,10 @@
 
                      <p><input class ="contactbars" type="text"
                     placeholder="Message" required name="Message"></p>
+                    <button class="submit">Send</button>
 
                     
-                    <input type="submit" value="Send">
+                   <!-- <input type="submit" value="Send"> -->
                     <br>
                     
                     
@@ -309,6 +323,10 @@
         </section>
 
         <script>
+            function validateForm(){
+                let x =documents.forms[contactForm]
+            }
+
 
 
 
